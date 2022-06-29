@@ -13,4 +13,23 @@
 ```shell
 var names=["珍爱生命远离网络","缺氧的鱼","姐的大姨妈都比你红","别逼我耍流氓╮","蹲在坟前听鬼讲故事"];
 ```
-* 
+* 增加人物：
+```shell
+function handleData(data){
+  var d=JSON.parse(data);
+  if(d.state=="act"){
+    //RIVAL.selectByIdAndPos(d.x,d.y,d.id).modAttr(d);
+    RIVAL.selectById(d.id).modAttr(d);
+   }else if(d.state=="add"){//加载新来的单个玩家
+     addRival(d);
+   }else if(d.state=="new"){
+     player.init(d);
+   }else if(d.state=="del"){
+     RIVAL.removeById(d.id);
+   }else{//加载已有的玩家
+    d.each(function(one,i){
+      addRival(one);
+    });
+   }
+}
+```
