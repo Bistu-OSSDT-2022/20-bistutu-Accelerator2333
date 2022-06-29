@@ -4,7 +4,6 @@
 [开始游戏](https://theajack.github.io/bombbattle)
 
 ![图片](https://github.com/qtys520521/yurinumberone/blob/main/43c2be20025e125c4f4f626339ea0f1.png)
-![图片](https://github.com/qtys520521/yurinumberone/blob/main/ad688b1b76832eed3e42bd3259d8cf0.png)
 
 ## 导师：
   陈绵康
@@ -21,6 +20,7 @@
 ## 操作方式：
  鼠标方向-前进
  鼠标左键-释放炸弹
+![图片](https://github.com/qtys520521/yurinumberone/blob/main/ad688b1b76832eed3e42bd3259d8cf0.png)
 ## 原理：
 * 人物名称：
 ```shell
