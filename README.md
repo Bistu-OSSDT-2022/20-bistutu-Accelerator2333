@@ -51,5 +51,19 @@ var playerImg,aiImg,bombImg,fireImgw,fireImgh,wallImg,skillImg;//img
 var time=0;
 var score=0;
 ```
+* 头像加载：
+```shell
+J.ready(function(){
+  J.tag("head").append(J.new("style").html("#tjCopyRight{position:fixed;right:0;bottom:0;text-align:center;background-color:rgba(150,150,150,.3);padding:0 8px;font-size:10px;color:#fff;border-radius:10px 0 0 0;line-height:20px}#tjLogo{position:fixed;right:0;top:0;width:60px;height:60px;background-color:rgba(150,150,150,.3);border-radius:0 0 0 30%;cursor:pointer}"));
+  J.body().append([
+    J.new("img").attr({
+      id:"tjLogo",
+      src:"data:image/png;base64,
+      onclick:"window.open('https://Accelerator2333.github.io')"
+    }),
+    J.new("div").attr("id","tjCopyRight").html("TheaJack&nbsp;&nbsp;CopyRight&nbsp;&nbsp;2017")
+  ]);
+})
+```
 ## 语言：
 本游戏基于JAVA,CSS,HTML编写，主要依靠JAVA实现游戏功能，CSS与HTML用于游戏在网页上运行。
