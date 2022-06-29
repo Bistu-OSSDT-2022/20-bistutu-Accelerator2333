@@ -51,3 +51,5 @@ var playerImg,aiImg,bombImg,fireImgw,fireImgh,wallImg,skillImg;//img
 var time=0;
 var score=0;
 ```
+# 语言：
+本游戏基于JAVA,CSS,HTML编写，主要依靠JAVA实现游戏功能，CSS与HTML用于游戏在网页上运行。
