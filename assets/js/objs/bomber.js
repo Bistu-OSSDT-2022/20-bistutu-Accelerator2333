@@ -7,6 +7,7 @@
 //      捡到道具 炸弹爆炸 被炸到
 //这样可以减少需要发送的数据，提高效率与同步度
 //玩家 
+<<<<<<< HEAD
 var BOMBER = {
   "statuTime": 2000
 };
@@ -41,6 +42,40 @@ function Bomber() {
   addProtoFun(Bomber, playerFun);
 };
 Bomber.prototype.getPosJson = function () {
+=======
+var BOMBER={
+  "statuTime":2000
+};function Bomber(){
+  this.id=0;
+  this.x=0;
+  this.y=0;
+  this.tx=0;//相对于map
+  this.ty=0;
+  this.dis=0;
+  this.range=range;//半径
+  this.img=playerImg;
+  this.color="#f00";
+  this.time=0;
+  this.alp=2;
+  this.isInvici=true;
+  this.isTargetChange=false;
+  this.isPosChange=false;
+  this.posBi=0;
+  this.area=[];//涉及区域
+  this.name=names[getRandomNum(0,nameNum-1)];
+  this.statuText="";
+  this.textStyle="";
+  this.showStatu=false;
+  this.showStatuTime=0;
+  this.bombNum=0;//已放置炸弹数
+  this.bombMaxNum=3;
+  this.speed=1.5;//速度
+  this.hp=3;//生命值
+  this.power=8;//炸弹范围
+  this.damage=1;//伤害
+  addProtoFun(Bomber,playerFun);
+};Bomber.prototype.getPosJson=function(){
+>>>>>>> 16f9bc42feab2952956f71fac9cb4d61e3230354
   return {
     "id": this.id,
     "x": parseInt(this.x),
