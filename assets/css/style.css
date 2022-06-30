@@ -12,7 +12,7 @@ body{
 }
 .cursor-pointer{cursor:pointer}
 .position-relative{position:relative}
-.bg-white{  background-color:#fff!important; }
+.bg-white{  background-color:rgb(255, 255, 255)!important; }
 .bg-gray{  background-color: #ccc; }
 .bg-eee{  background-color:#eee!important; }
 .bg-orange{ background-color:#f39800!important; }
