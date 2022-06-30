@@ -25,7 +25,10 @@
  D-向右移动  
  
  ## 道具：
- 范围-增加炸弹范围  伤害-增加一爆炸伤害  速度-增加移速  弹数-增加场上己方同时存在炸弹数量
+ 范围-增加炸弹范围  
+ 伤害-增加一爆炸伤害  
+ 速度-增加移速  
+ 弹数-增加场上己方同时存在炸弹数量
  
 ![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/ad688b1b76832eed3e42bd3259d8cf0.png)
 
