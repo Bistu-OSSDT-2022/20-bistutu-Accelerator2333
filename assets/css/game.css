@@ -1,9 +1,10 @@
 body{
   position:fixed;
   overflow:hidden;
+  background-color: rgb(11, 28, 76);
 }
 #gameCanvas{
-  background-color: #eee;
+  background-color: rgb(11, 28, 76);
   margin:0;
   cursor:url(../images/cursor.png),auto;
   
