@@ -5,7 +5,7 @@ var lmapLen=300;
 var objLSize=4;
 var objHSize=objLSize/2;
 var rate=lmapLen/mapLen;
-var range=26;//ËùÓĞÔªËØ´óĞ¡Ò»ÖÂ
+var range=31;//æ‰€æœ‰å…ƒç´ å¤§å°ä¸€è‡´
 var cx=winWidth/2;
 var cy=winHeight/2;
 
@@ -42,11 +42,11 @@ function getRandomNum(Min,Max){
 function countDis(x1,y1,x2,y2){
   return Math.sqrt(Math.pow(x1-x2,2)+Math.pow(y1-y2,2));
 }
-function countDeg(x1,y1,x2,y2){//·µ»ØÖµ(-180,180]
+function countDeg(x1,y1,x2,y2){//è¿”å›å€¼(-180,180]
   return countDegByDxy(x2-x1,y2-y1);
 }
 
-function countDegByDxy(dx,dy){//·µ»ØÖµ(-180,180]
+function countDegByDxy(dx,dy){//è¿”å›å€¼(-180,180]
   if(dx==0){
     return fit(dy)*pi/2;
   }else{
@@ -58,13 +58,13 @@ function countDegByDxy(dx,dy){//·µ»ØÖµ(-180,180]
     }
   }
 }
-function fit(n){//È¡·ûºÅ
+function fit(n){//å–ç¬¦å·
   if(n>=0){
     return 1;
   }
   return -1;
 }
-function countMoveDis(deg,speed){//·µ»ØÖµ(-180,180]
+function countMoveDis(deg,speed){//è¿”å›å€¼(-180,180]
   return {
     "dx":parseFloat((speed*Math.cos(deg))),
     "dy":parseFloat((speed*Math.sin(deg))),
@@ -96,17 +96,17 @@ function getMapPos(x,y){
 }
 
 
-//°ÑµØÍ¼»®·ÖÎªn*n¿é ÒÀ´Î±ê¼ÇÎª 0£¬1...£¬n*n-1£¬
+//æŠŠåœ°å›¾åˆ’åˆ†ä¸ºn*nå— ä¾æ¬¡æ ‡è®°ä¸º 0ï¼Œ1...ï¼Œn*n-1ï¼Œ
 var size=5;
 var blockNum=size*size;
 var blockLen=mapLen/size;
-function getBlockIndex(obj){//µÃ³öÄ³ÔªËØµÄ¿éÎ»ÖÃ £¨Î¨Ò»£©
+function getBlockIndex(obj){//å¾—å‡ºæŸå…ƒç´ çš„å—ä½ç½® ï¼ˆå”¯ä¸€ï¼‰
   return getBlockIndexByPos(obj.x,obj.y);
 }
 
-function getBombAreaIndex(bomb){//¼ÆËãÕ¨µ¯ÄÜÉæ¼°µÄ¿éid
-  var os=range*2;//¶ÌµÄÆ«ÒÆÁ¿
-  var ol=bomb.getMaxWidth()/2;//³¤µÄÆ«ÒÆÁ¿
+function getBombAreaIndex(bomb){//è®¡ç®—ç‚¸å¼¹èƒ½æ¶‰åŠçš„å—id
+  var os=range*2;//çŸ­çš„åç§»é‡
+  var ol=bomb.getMaxWidth()/2;//é•¿çš„åç§»é‡
   var x=bomb.x;
   var y=bomb.y;
   return getBlockIndexByPoints([x-os,y-ol,x+os,y-ol,x-os,y+ol,x+os,y+ol,x-ol,y-os,x-ol,y+os,x+ol,y-os,x+ol,y+os]);
@@ -123,18 +123,18 @@ function removeSameIndex(indexs){
   }
   return indexs;
 }
-function getObjAreaIndex(obj){//¼ÆËã³öÕ¨µ¯ÍâµÄÔªËØÄÜÉæ¼°µÄ¿éid
+function getObjAreaIndex(obj){//è®¡ç®—å‡ºç‚¸å¼¹å¤–çš„å…ƒç´ èƒ½æ¶‰åŠçš„å—id
   var o=obj.getRange()+range;
   var x=obj.x;
   var y=obj.y;
   return getBlockIndexByPoints([x-o,y-o,x-o,y+o,x+o,y-o,x+o,y+o]);
 }
-function getBlockIndexByPos(x,y){//µÃ³öÄ³ÔªËØµÄ¿éÎ»ÖÃ £¨Î¨Ò»£©
+function getBlockIndexByPos(x,y){//å¾—å‡ºæŸå…ƒç´ çš„å—ä½ç½® ï¼ˆå”¯ä¸€ï¼‰
   if(x>=mapLen){x=mapLen-1;}
   if(y>=mapLen){y=mapLen-1;}
   return Math.floor(x/blockLen)+(Math.floor(y/blockLen)*size);
 }
-function getBlockIndexByPoints(points){//µÃ³öÄ³ÔªËØµÄ¿éÎ»ÖÃ £¨Î¨Ò»£©
+function getBlockIndexByPoints(points){//å¾—å‡ºæŸå…ƒç´ çš„å—ä½ç½® ï¼ˆå”¯ä¸€ï¼‰
   //var points=[x-os,y-ol,x+os,y-ol,x-os,y+ol,x+os,y+ol,x-ol,y-os,x-ol,y+os,x+ol,y-os,x+ol,y+ol];
   var indexs=[];
   for(var i=0;i<points.length;i+=2){
