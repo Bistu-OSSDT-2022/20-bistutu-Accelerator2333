@@ -22,7 +22,7 @@
 ![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/ad688b1b76832eed3e42bd3259d8cf0.png)
 
 ## 你已经学会怎么战斗了，接下来面对几十个敌人吧！
-![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220630191421.png）
+![图片]([https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/ad688b1b76832eed3e42bd3259d8cf0.png](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220630191421.png))
 
 ## 原理：
 * 人物名称：
