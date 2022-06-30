@@ -1,9 +1,8 @@
-# [bombbattle](https://github.com/theajack/bombbattle)
-## 炸弹大作战纯前端小游戏
+## Doge大作战
 
-[开始游戏](https://theajack.github.io/bombbattle)
+[START](https://theajack.github.io/bombbattle)
 
-![图片](https://github.com/qtys520521/yurinumberone/blob/main/43c2be20025e125c4f4f626339ea0f1.png)
+![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/43c2be20025e125c4f4f626339ea0f1.png)
 
 ## 导师：
   陈绵康
@@ -20,7 +19,11 @@
 ## 操作方式：
  鼠标方向-前进
  鼠标左键-释放炸弹
-![图片](https://github.com/qtys520521/yurinumberone/blob/main/ad688b1b76832eed3e42bd3259d8cf0.png)
+![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/ad688b1b76832eed3e42bd3259d8cf0.png)
+
+## 你已经学会怎么战斗了，接下来面对几十个敌人吧！
+![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20220630191421.png）
+
 ## 原理：
 * 人物名称：
 ```shell
