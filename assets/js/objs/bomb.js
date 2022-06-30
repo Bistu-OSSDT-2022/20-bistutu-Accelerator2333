@@ -1,6 +1,6 @@
 //炸弹
 var BOMB={//公用数据
-  "maxTime":3000,//炸弹等待时间
+  "maxTime":2999,//炸弹等待时间
   "maxIndex":40,//数值越小，爆炸越快
   "range":range,
   "height":range*2,//炸弹宽度

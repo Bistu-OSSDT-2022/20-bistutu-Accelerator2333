@@ -32,9 +32,9 @@ var BOMBER={
   this.showStatu=false;
   this.showStatuTime=0;
   this.bombNum=0;//已放置炸弹数
-  this.bombMaxNum=2;
+  this.bombMaxNum=3;
   this.speed=1.5;//速度
-  this.hp=5;//生命值
+  this.hp=3;//生命值
   this.power=8;//炸弹范围
   this.damage=1;//伤害
   addProtoFun(Bomber,playerFun);
