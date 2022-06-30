@@ -1,5 +1,5 @@
 var RIVAL={
-  "aiNum":60,
+  "aiNum":40,
   "statuTime":2000,
   "isAi":true,
   "size":0,
