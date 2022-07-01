@@ -12,6 +12,7 @@ http://htmlpreview.github.io/?https://github.com/Bistu-OSSDT-2022/20-bistutu-Acc
   华翰硕
   冉昕哲
   王茹斌
+  赵鑫
             
 
 ## 游戏模式：
