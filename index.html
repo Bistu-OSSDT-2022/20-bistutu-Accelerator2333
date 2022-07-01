@@ -20,12 +20,16 @@
 </head>
 
 <body class="bg-white">
-
   <div id="wrapper" class="change phone">
-    <audio preload autoplay loop id="music">
+    <input type="button" value="查看玩法" onclick="popup()" />
+    <audio preload autoplay loop id="bgm">
       <source src="./assets/music/bgm.mp3" type="audio/mpeg">
       您的浏览器不支持 audio 元素。
     </audio>
+    <!-- <audio id="put">
+      <source src="./assets/music/put.mp3" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+    </audio> -->
     <canvas id="mapCanvas" class="common-div change phone">
 
     </canvas>
@@ -36,9 +40,9 @@
       </div>
       <div class="score-item change phone">
         <span class="fun-btn glyphicon glyphicon-play change phone" id="pauseBtn"><span
-            class="btn-text change phone">(空格)</span></span>
+            class="btn-text change phone">暂停</span></span>
         <span class="fun-btn glyphicon glyphicon-repeat change phone" id="restartBtn"><span
-            class="btn-text change phone">(回车)</span></span>
+            class="btn-text change phone">重来</span></span>
       </div>
     </div>
   </div>
@@ -64,11 +68,26 @@
       setInterval("toggleSound()", 100);
     }
     function toggleSound() {
-      var music = document.getElementById("music");
+      var music = document.getElementById("bgm");
       if (music.paused) {
         music.paused = false;
         music.play();
       }
+    }
+  </script>
+  <!-- <script type="text/javascript">
+    // window.onload = function () {
+    //   setInterval("putSound()", 1);
+    // }
+    function putSound() {
+      var put = document.getElementById("put");
+      put.play();
+
+    }
+  </script> -->
+  <script type="text/javascript">
+    function popup() {
+      alert('操作方式：' + '\n' + '控制移动：鼠标滚轮+键盘方向键' + '\n' + '放置炸弹：鼠标左键' + '\n' + '道具：' + '\n' + '范围-增加炸弹爆炸范围' + '\n' + '伤害-增加一炸弹伤害' + '\n' + '速度-增加移速' + '\n' + '弹数-增加存弹数');
     }
   </script>
 </body>
