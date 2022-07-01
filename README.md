@@ -1,6 +1,7 @@
 ## 炸弹小游戏
 
-[开始游戏](http://htmlpreview.github.io/?https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/index.html)
+## 游玩地址
+http://htmlpreview.github.io/?https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/index.html
 
 ![图片](https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/assets/images/43c2be20025e125c4f4f626339ea0f1.png)
 
