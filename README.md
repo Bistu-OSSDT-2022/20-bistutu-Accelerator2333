@@ -10,7 +10,7 @@ http://htmlpreview.github.io/?https://github.com/Bistu-OSSDT-2022/20-bistutu-Acc
 ## 小组成员：
   张智皓
   华翰硕
-  赵鑫
+ 
   冉昕哲
   王茹斌
             
