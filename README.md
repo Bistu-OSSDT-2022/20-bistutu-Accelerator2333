@@ -83,3 +83,5 @@ J.ready(function(){
   ]);
 })
 ```
+## 源码地址
+https://github.com/theajack/bombbattle
