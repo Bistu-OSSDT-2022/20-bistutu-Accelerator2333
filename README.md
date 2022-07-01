@@ -1,4 +1,4 @@
-## Doge大作战
+## 炸弹小游戏
 
 [开始游戏](http://htmlpreview.github.io/?https://github.com/Bistu-OSSDT-2022/20-bistutu-Accelerator2333/blob/master/index.html)
 
@@ -38,11 +38,7 @@
 ## 原理：
 * 人物名称：
 ```shell
-<<<<<<< HEAD
 var names=["姬霓太美","你干嘛~哎呦~","鸡汤来咯","穿山甲","王大队长","屑司令"];
-=======
-var names=["姬霓太美","你干嘛~哎呦~","鸡汤来咯","穿山甲"];
->>>>>>> 763d30ec68ef8cc73692118ea5bc29f96189da4d
 ```
 * 增加人物：
 ```shell
